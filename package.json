@@ -1,0 +1,24 @@
+{
+  "name": "oolong",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Yet another JavaScript testing framework.",
+  "main": "bin/oolong.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kieranroneill/oolong.git"
+  },
+  "author": "Kieran O'Neill <kieranroneill@googlemail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=\"development\" node -r babel-register src/oolong.js"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "cross-env": "^5.1.4"
+  }
+}
