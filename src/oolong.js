@@ -1,3 +1,1 @@
-/* eslint-disable no-console */
-console.log('Hello Human!');
-/* eslint-enable no-console */
+export const when = () => console.log('testy testy');
