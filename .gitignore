@@ -71,9 +71,6 @@ gen
 coverage/
 junit/
 
-### Build
-dist/
-
 ### Dependencies
 node_modules/
 

@@ -1,3 +1,3 @@
 # Oolong
 
-Tests stuff...
+Yet another JavaScript testing framework.
