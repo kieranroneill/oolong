@@ -14,9 +14,9 @@
     "node": ">= 4.0.0"
   },
   "scripts": {
-    "build": "babel src/ -d dist/ --ignore test.js",
+    "build": "babel src/ -d bin/",
     "lint": "eslint --ext .js .",
-    "start": "node -r babel-register src/oolong.js",
+    "start": "yarn build && node example",
     "test": "node example"
   },
   "devDependencies": {
@@ -25,5 +25,8 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "eslint": "^4.19.1"
+  },
+  "dependencies": {
+    "colors": "^1.2.1"
   }
 }
