@@ -1,5 +1,5 @@
 export default function(title, callback) {
-    console.log(`=> ${title}`.yellow);
+    console.log(`=> ${title}`.cyan);
 
     callback();
 }
