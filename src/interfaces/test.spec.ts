@@ -1,24 +1,24 @@
-import { assert, spy } from 'sinon';
+import { assert, SinonSpy, spy } from 'sinon';
 
 // Interface.
 import test from './test';
 
 describe('interfaces/test', () => {
-    const scope = {
-        callbackSpy: null
+    const scope: { callbackSpy: SinonSpy } = {
+        callbackSpy: null,
     };
-    const title = 'nameOfAFunction()';
+    const title: string = 'nameOfAFunction()';
 
     beforeEach(() => {
         scope.callbackSpy = spy();
     });
 
     afterEach(() => {
-        scope.callbackSpy.restore();
+        scope.callbackSpy = null;
     });
 
     it('should call the callback function', () => {
-        test(title, scope.callback);
+        test(title, scope.callbackSpy);
 
         assert.calledOnce(scope.callbackSpy);
     });

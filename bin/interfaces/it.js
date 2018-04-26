@@ -1,17 +1,16 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-exports.default = function (title, callback) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var chalk_1 = require("chalk");
+var black = chalk_1.default.black, green = chalk_1.default.green, red = chalk_1.default.red;
+function default_1(title, callback) {
     try {
         callback();
-        console.log(`\u0009${' OK '.bgGreen.black} ${title.green}`);
-    } catch (e) {
-        console.log(`\u0009${' FAIL '.bgRed.black} ${title.red}`);
-        console.log(`\u0009${e.stack.red}`);
+        console.log("\t" + black.bgGreen(' OK ') + " " + green(title));
     }
-};
-
-;
+    catch (error) {
+        console.log("\t" + black.bgRed(' FAIL ') + " " + red(title));
+        console.log("\t" + red(error));
+    }
+}
+exports.default = default_1;
+//# sourceMappingURL=it.js.map

@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "linebreak-style": [true, "LF"],
+    "no-console": false,
+    "no-unused-variable": true,
+    "max-line-length": [true, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}|class [a-zA-Z] implements |//"}],
+    "quotemark": [true, "single", "avoid-escape"]
+  }
+}

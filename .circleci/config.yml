@@ -55,6 +55,26 @@ jobs:
           name: Stop! It's linter time
           command: yarn lint
 
+  ################################
+  # Tests
+  ################################
+
+  unit_tests:
+    <<: *default_node_image
+
+    steps:
+      - checkout
+
+      # Restore cached dependencies.
+      - restore_cache:
+          keys:
+          - node-dependencies-{{ checksum "package.json" }}
+
+      # Linting.
+      - run:
+          name: Destroy the companion cube so testing can continue.
+          command: yarn test
+
 workflows:
   version: 2
   build_test_deploy:
@@ -64,6 +84,12 @@ workflows:
             tags:
               only: /.*/
       - lint:
+          requires:
+            - dependencies
+          filters:
+            tags:
+              only: /.*/
+      - unit_tests:
           requires:
             - dependencies
           filters:

@@ -1,4 +1,4 @@
-export default function(equality) {
+export default function(equality: any): boolean {
     if (equality) {
         return true;
     }

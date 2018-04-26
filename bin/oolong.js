@@ -1,28 +1,12 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.test = exports.it = undefined;
-
-var _it = require('./interfaces/it');
-
-Object.defineProperty(exports, 'it', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_it).default;
-  }
-});
-
-var _test = require('./interfaces/test');
-
-Object.defineProperty(exports, 'test', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_test).default;
-  }
-});
-
-require('colors');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// Interfaces.
+var expect_1 = require("./interfaces/expect");
+exports.expect = expect_1.default;
+var it_1 = require("./interfaces/it");
+exports.it = it_1.default;
+var test_1 = require("./interfaces/test");
+exports.test = test_1.default;
+var when_1 = require("./interfaces/when");
+exports.when = when_1.default;
+//# sourceMappingURL=oolong.js.map

@@ -1,5 +1,3 @@
-import 'colors';
-
 // Interfaces.
 export { default as expect } from './interfaces/expect';
 export { default as it } from './interfaces/it';

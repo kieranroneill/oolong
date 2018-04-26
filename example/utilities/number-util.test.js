@@ -1,7 +1,7 @@
 const { it, test } = require('../../bin/oolong');
 
 // Module.
-const { isPrime } = require('./number-util');
+//const { isPrime } = require('./number-util');
 
 test('isPrime()', () => {
     it('should pass with flying colours', () => {});
