@@ -1,6 +1,6 @@
-import chalk from 'chalk';
+import Chalk from 'chalk';
 
-const { yellow } = chalk;
+const { yellow } = Chalk;
 
 export default function(title: string, callback: () => void): void {
     console.log(yellow(`=> ${title}`));

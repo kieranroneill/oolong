@@ -1,5 +1,4 @@
 // Interfaces.
-export { default as expect } from './interfaces/expect';
-export { default as it } from './interfaces/it';
-export { default as test } from './interfaces/test';
-export { default as when } from './interfaces/when';
+export { default as it } from './Interfaces/It';
+export { default as test } from './Interfaces/Test';
+export { default as describe } from './Interfaces/Describe';

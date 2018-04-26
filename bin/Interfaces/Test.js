@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var chalk_1 = require("chalk");
-var cyan = chalk_1.default.cyan;
+var yellow = chalk_1.default.yellow;
 function default_1(title, callback) {
-    console.log(cyan("=> " + title));
+    console.log(yellow("=> " + title));
     callback();
 }
 exports.default = default_1;
-//# sourceMappingURL=when.js.map
+//# sourceMappingURL=Test.js.map
